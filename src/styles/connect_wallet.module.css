@@ -1,0 +1,90 @@
+.bg_theme_wallet {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/mobile/bg_wallet.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  font-family: "Skranji";
+  z-index: -100;
+}
+.menu_icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+.panel_wallet_container {
+  position: absolute;
+
+  top: 170px;
+  background-image: url("/mobile/panel_check 1_wallet.png");
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+
+  background-size: 100% 100%;
+}
+.wallet_heading {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #d27812;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.x_icon {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+
+  cursor: pointer;
+}
+.wallet_group {
+  position: absolute;
+  top: 90px;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  color: #845704;
+  font-size: 18px;
+  cursor: pointer;
+}
+.wallet_group img {
+  width: 60px;
+  height: 50px;
+}
+.wallet_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wallet_text p {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.wallet_bottom_group {
+  position: absolute;
+  top: 170px;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  color: #845704;
+  font-size: 18px;
+  cursor: pointer;
+}
+.wallet_bottom_group img {
+  width: 50px;
+  height: 50px;
+}

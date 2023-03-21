@@ -1,0 +1,144 @@
+.bg_Scarab_page {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/mobile/bg_wallet.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  font-family: "Skranji";
+  z-index: -100;
+}
+.menu_icon {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+.burger_menu {
+  position: absolute;
+  top: 85px;
+  right: 0;
+  background-color: white;
+  height: 80px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.menu_item {
+  margin-left: 20px;
+  font-size: 17px;
+}
+.header_icon_button {
+  position: absolute;
+  top: 10px;
+  /* right: 10px; */
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 15%;
+}
+.header_logo {
+  margin-left: 20%;
+  font-size: 50px;
+}
+.header_button {
+  border: 1px solid white;
+  font-family: "skranji";
+  font-size: 13px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100px;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.header_button:hover {
+  background-color: #d27812;
+  color: white;
+  cursor: pointer;
+}
+.scarab_page_small_panel {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  position: absolute;
+  top: 170px;
+
+  gap: 35px;
+}
+.small_panel {
+  background-image: url("/mobile/panel_info_small2 1.png");
+
+  height: 70px;
+  width: 150px;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5x px;
+}
+.small_panel_heading {
+  font-size: 12px;
+  margin-top: 12px;
+}
+.small_panel_value {
+  font-size: 15px;
+  color: #d27812;
+}
+.small_panel_align {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small_panel_align_center {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 55px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer_png_container {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+.footer_png {
+  margin-left: 10px;
+  margin-right: 15px;
+  height: 35px;
+  width: 35px;
+}
+
+.footer_button {
+  position: absolute;
+  font-family: "Skranji";
+  bottom: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
