@@ -312,7 +312,7 @@
   }
   .navbar_left a {
     -webkit-text-stroke: 1.5px rgb(43, 9, 9);
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: #d27812;
     font-weight: bold;
     font-size: 18px;
     margin-left: 4rem;
@@ -541,7 +541,7 @@
   }
   .navbar_left a {
     -webkit-text-stroke: 1.5px rgb(43, 9, 9);
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: #d27812;
     font-weight: bold;
     font-size: 22px;
     margin-left: 11rem;

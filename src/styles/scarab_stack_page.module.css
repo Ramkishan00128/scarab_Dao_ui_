@@ -306,7 +306,7 @@
   }
   .navbar_left a {
     -webkit-text-stroke: 1.5px rgb(43, 9, 9);
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: #d27812;
     font-weight: bold;
     font-size: 18px;
     margin-left: 4rem;
@@ -330,11 +330,7 @@
     color: white;
     cursor: pointer;
   }
-  .navbar_right a:hover {
-    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
 
-    -webkit-text-fill-color: #ff9c2d;
-  }
   ._header_btn {
     width: 160px;
     display: flex;

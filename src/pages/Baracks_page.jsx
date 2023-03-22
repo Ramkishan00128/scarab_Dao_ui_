@@ -7,8 +7,11 @@ import telegram from "../../public/Assests_1st Frame/telegram 1.png";
 import discord from "../../public/Assests_1st Frame/Discord 1.png";
 import book from "../../public/Assests_1st Frame/book 1.png";
 import desktop_logo from "../../public/Assests_1st Frame/Logo 1.png";
+import { useState } from "react";
 
 const Barack_page = () => {
+  const [hide, setHide] = useState(false);
+  const handleToggle = () => {};
   return (
     <>
       <div className={style.bg_Scarab_page}>
@@ -42,7 +45,7 @@ const Barack_page = () => {
         <div className={style.desktop_statue_1}></div>
         <div className={style.desktop_statue_2}></div>
         {/* Desktop_code_End_here */}
-        <div className={style.burger_menu}>
+        <div className={hide == true ? style.burger_menu : style.hide_menu}>
           <div className={style.menu_item}>
             <p>Stake</p>
             <p>Acts of BARACS</p>

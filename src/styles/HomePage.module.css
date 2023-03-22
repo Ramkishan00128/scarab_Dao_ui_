@@ -74,7 +74,7 @@
 
 .beetal_theme0 {
   position: absolute;
-  top: 30%;
+  top: 25%;
 
   width: 95%;
   padding: 0 5px;
@@ -248,6 +248,10 @@
 .drawer ul li:hover {
   color: #d76b47;
 }
+.nav_list li:nth-child(1) {
+  color: #d76b47;
+}
+
 .drawer_btn {
   font-family: "Skranji";
   border: 1px solid #ffffff;
@@ -262,21 +266,61 @@
 }
 
 @media screen and (min-width: 600px) {
+  .bg_theme1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/mobile/bg_green_tablet_view.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Skranji";
+  }
+  .bg_theme2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/mobile/bg_red_tablet_view.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Skranji";
+  }
+  .bg_theme3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/mobile/tablet_view_blue.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Skranji";
+  }
+
   .beetal_theme0 {
     position: absolute;
-    top: 160px;
+    top: 170px;
 
-    width: 80%;
+    width: 50%;
     padding: 0 5px;
-    height: 240px;
+    height: 200px;
   }
   .beetal_theme1 {
     position: absolute;
-    top: 90px;
+    top: 105px;
 
     width: 30%;
     padding: 0 5px;
-    height: 240px;
+    height: 200px;
   }
   .beetal_theme2 {
     position: absolute;
@@ -285,6 +329,48 @@
     width: 30%;
     padding: 0 5px;
     height: 240px;
+  }
+  .panel_container {
+    position: absolute;
+
+    top: 310px;
+    background-image: url("/mobile/panel_proposal\ 1.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+
+    background-size: 100% 100%;
+  }
+
+  .panel_text {
+    position: absolute;
+    top: 30px;
+
+    font-family: "Skranji";
+  }
+  .panel_text h2 {
+    font-family: "Skranji";
+    text-align: center;
+    font-size: 15px;
+  }
+  .panel_text p {
+    font-size: 11px;
+    padding: 0 20px;
+
+    margin: auto;
+    color: #845704;
+  }
+  .footer {
+    position: absolute;
+    bottom: 4px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
   }
 }
 
@@ -709,7 +795,7 @@
 
     width: 34%;
     padding: 0 5px;
-    height: 250px;
+    max-height: 250px;
     transform: translateY(-30%);
   }
   .beetal_theme1 {

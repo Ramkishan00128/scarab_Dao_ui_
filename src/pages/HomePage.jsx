@@ -20,6 +20,14 @@ const Home_header = () => {
   const [hide, setHide] = useState(true);
   const [theme, setTheme] = useState(0);
 
+  // setInterval(() => {
+  //   if (theme == 0 || theme == 1) {
+  //     setTheme(theme + 1);
+  //   } else {
+  //     setTheme(0);
+  //   }
+  // }, 5000);
+
   const handleToggle = () => {};
   const themedata = [beetal, horus_eye_1, pharaoh];
   const datatext = [
@@ -43,23 +51,14 @@ const Home_header = () => {
       setTheme(0);
     }
   };
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     if (theme === 0 || theme === 1) {
-  //       setTheme(theme + 1);
-  //     } else {
-  //       setTheme(0);
-  //     }
-  //   }, 4000);
-  // });
 
   return (
     <>
       {/* <div className={style.bg_theme1} */}
       <div
-        className={`${theme == 0 ? style.bg_theme1 : ""} ${
-          theme == 1 ? style.bg_theme2 : ""
-        } ${theme == 2 ? style.bg_theme3 : ""}`}
+        className={`${theme == 0 && style.bg_theme1} ${
+          theme == 1 && style.bg_theme2
+        } ${theme == 2 && style.bg_theme3}`}
       >
         <motion.div
           initial={{ y: "-100%" }}
@@ -67,7 +66,7 @@ const Home_header = () => {
           exit={{ y: "-100%" }}
           className={`${style.drawer} ${hide && style.hide}`}
         >
-          <ul>
+          <ul className={style.nav_list}>
             <li>lorem Ispum</li>
             <li>lorem Ispum</li>
             <li>lorem Ispum</li>
@@ -76,7 +75,7 @@ const Home_header = () => {
           <button className={style.drawer_btn}>Stack and Vote SCARAB</button>
           <button className={style.drawer_btn}>Stack and Vote BARACS</button>
         </motion.div>
-        <Image className={style.logo} src={logo} alt='logo' />
+        <Image className={style.logo} src={desktop_logo} alt='logo' />
         <Image
           onClick={() => handleToggle(setHide(!hide))}
           className={style.menu_icon}

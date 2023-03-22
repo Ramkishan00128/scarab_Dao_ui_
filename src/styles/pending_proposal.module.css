@@ -54,11 +54,12 @@
 .pending_panel {
   position: absolute;
 
-  top: 140px;
+  top: 110px;
   background-image: url("/mobile/pending_panel 2.png");
   background-repeat: no-repeat;
   height: 400px;
-  width: 95%;
+  /* width: 95%; */
+  min-width: 300px;
 
   background-size: 100% 100%;
 }
@@ -120,6 +121,7 @@
   border: 1px solid #ffffff;
   border-radius: 5px;
 }
+
 @media screen and (min-width: 852px) {
   .header_icon_button {
     display: none;
@@ -175,7 +177,7 @@
   }
   .navbar_right a {
     -webkit-text-stroke: 1.5px rgb(43, 9, 9);
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: #d27812;
     font-weight: bold;
     margin-right: 5rem;
     font-size: 18px;
@@ -359,7 +361,7 @@
   }
   .navbar_right a {
     -webkit-text-stroke: 1.5px rgb(43, 9, 9);
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: #d27812;
     font-weight: bold;
     margin-right: 11rem;
     font-size: 22px;

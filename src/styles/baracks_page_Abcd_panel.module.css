@@ -1,3 +1,19 @@
+.panel_info_left {
+  display: none;
+}
+.panel_info_right {
+  display: none;
+}
+.Navbar {
+  display: none;
+}
+.Desktoplogo {
+  display: none;
+}
+.desktop_HomePage_panel {
+  display: none;
+}
+
 .bg_Scarab_page {
   height: 100vh;
   width: 100%;
@@ -54,7 +70,8 @@
   background-image: url("/mobile/stack_page_panel.png");
   position: relative;
   height: 350px;
-  width: 100%;
+  /* width: 100%; */
+  min-width: 300px;
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
@@ -199,6 +216,21 @@
   border-radius: 5px;
 }
 
+@media screen and (min-width: 550px) {
+  .stack_page_panel {
+    background-image: url("/mobile/stack_page_panel.png");
+    position: relative;
+    height: 350px;
+    /* width: 100%; */
+    min-width: 400px;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #845704;
+  }
+}
+
 @media screen and (min-width: 852px) {
   .header_icon_button {
     display: none;
@@ -238,7 +270,7 @@
   }
   .navbar_left a {
     -webkit-text-stroke: 1.5px rgb(43, 9, 9);
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: #d27812;
     font-weight: bold;
     font-size: 18px;
     margin-left: 1rem;
@@ -455,7 +487,7 @@
   }
   .navbar_left a {
     -webkit-text-stroke: 1.5px rgb(43, 9, 9);
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: #d27812;
     font-weight: bold;
     font-size: 20px;
     margin-left: 2rem;
@@ -535,7 +567,7 @@
   }
   .navbar_left a {
     -webkit-text-stroke: 1.5px rgb(43, 9, 9);
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: #d27812;
     font-weight: bold;
     font-size: 20px;
     margin-left: 11rem;

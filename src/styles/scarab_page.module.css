@@ -25,6 +25,26 @@
   width: 30px;
   cursor: pointer;
 }
+.burger_menu {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  background-color: white;
+  height: 90px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  gap: 10px;
+}
+.menu_item {
+  margin-left: 20px;
+  font-size: 17px;
+}
+.hide_menu {
+  display: none;
+}
 .header_icon_button {
   position: absolute;
   top: 10px;
@@ -172,6 +192,9 @@
 }
 
 @media screen and (min-width: 852px) {
+  .burger_menu {
+    display: none;
+  }
   .header_icon_button {
     display: none;
   }
@@ -187,7 +210,6 @@
     display: flex;
     justify-content: center;
     font-family: "Skranji";
-    z-index: -100;
   }
   .menu_icon {
     display: none;
@@ -218,6 +240,9 @@
     text-decoration: none;
     color: white;
   }
+  .navbar_left a:hover {
+    -webkit-text-fill-color: #d27812;
+  }
   .navbar_right {
     display: flex;
     align-items: center;
@@ -233,6 +258,9 @@
     color: white;
     cursor: pointer;
   }
+  .navbar_right a:hover {
+    -webkit-text-fill-color: #d27812;
+  }
   ._header_btn {
     width: 160px;
 
@@ -243,6 +271,9 @@
     font-family: "Skranji", cursive;
     border: 0.4px solid #ffffff;
     -webkit-text-stroke: #ffffff;
+  }
+  ._header_btn p {
+    font-size: 16px;
   }
 
   .Desktoplogo {
@@ -336,6 +367,10 @@
     display: flex;
     align-items: center;
     margin-right: 5px;
+  }
+  .navbar_left a:hover {
+    /* -webkit-text-fill-color: orange; */
+    color: #d27812;
   }
   .navbar_right a {
     -webkit-text-stroke: 1.5px rgb(43, 9, 9);

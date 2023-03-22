@@ -11,27 +11,12 @@ import desktop_logo from "../../public/Assests_1st Frame/Logo 1.png";
 import { motion } from "framer-motion";
 
 const Scarab_page = () => {
-  const [hide, setHide] = useState(true);
+  const [hide, setHide] = useState(false);
   const handleToggle = () => {};
 
   return (
     <>
       <div className={style.bg_Scarab_page}>
-        {/* <motion.div
-          initial={{ y: "-100%" }}
-          whileInView={{ y: 0 }}
-          exit={{ y: "-100%" }}
-          className={`${style.drawer} ${hide && style.hide}`}
-        >
-          <ul>
-            <li>lorem Ispum</li>
-            <li>lorem Ispum</li>
-            <li>lorem Ispum</li>
-            <li>lorem Ispum</li>
-          </ul>
-          <button className={style.drawer_btn}>Stack and Vote SCARAB</button>
-          <button className={style.drawer_btn}>Stack and Vote BARACS</button>
-        </motion.div> */}
         <Image
           onClick={() => handleToggle(setHide(!hide))}
           className={style.menu_icon}
@@ -39,6 +24,12 @@ const Scarab_page = () => {
           alt='menu'
         />
 
+        <div className={hide == true ? style.burger_menu : style.hide_menu}>
+          <div className={style.menu_item}>
+            <p>Stake</p>
+            <p>Acts of BARACS</p>
+          </div>
+        </div>
         {/* Desktop_code_Start_here */}
         <div className={style.Navbar}>
           <div className={style.navbar_left}>
