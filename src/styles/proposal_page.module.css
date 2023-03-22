@@ -1,3 +1,10 @@
+.Navbar {
+  display: none;
+}
+.Desktoplogo {
+  display: none;
+}
+
 .bg_Scarab_page {
   height: 100vh;
   width: 100%;
@@ -122,4 +129,352 @@
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 852px) {
+  .header_icon_button {
+    display: none;
+  }
+  .bg_Scarab_page {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/mobile/Desktop_purple_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Skranji";
+    z-index: -100;
+  }
+  .menu_icon {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .Navbar {
+    position: absolute;
+    top: 15px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar_left {
+    display: flex;
+    margin-left: 2%;
+    align-items: center;
+  }
+  .navbar_left a {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 4rem;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar_right {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+  .navbar_right a {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    margin-right: 5rem;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  ._header_btn {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border-radius: 10px;
+    font-family: "Skranji", cursive;
+    border: 0.4px solid #ffffff;
+    -webkit-text-stroke: #ffffff;
+  }
+  ._header_btn_back {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border-radius: 10px;
+    font-family: "Skranji", cursive;
+    border: 0.4px solid #ffffff;
+    -webkit-text-stroke: #ffffff;
+  }
+  ._header_btn_back p {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  .Desktoplogo {
+    display: block;
+    height: 80px;
+    width: 150px;
+    position: absolute;
+    top: 10px;
+  }
+
+  .desktop_statue_1 {
+    background-image: url("/mobile/statue1 12.png");
+    height: 300px;
+    width: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 62px;
+    left: 10%;
+  }
+  .desktop_statue_2 {
+    background-image: url("/mobile/statue2 2.png");
+    height: 300px;
+    width: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 62px;
+    right: 10%;
+  }
+  .footer_button {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    bottom: 30px;
+  }
+  .footer_png_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .scarab_page_small_panel {
+    display: flex;
+    width: 50%;
+
+    top: 170px;
+
+    gap: 35px;
+  }
+  .small_panel {
+    height: 70px;
+    width: 150px;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5x px;
+  }
+  .small_panel_heading {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .small_panel_value {
+    font-size: 15px;
+    color: #d27812;
+  }
+  .small_panel_align {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  ._header_btn {
+    width: 160px;
+
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border-radius: 10px;
+    font-family: "Skranji", cursive;
+    border: 0.4px solid #ffffff;
+    -webkit-text-stroke: #ffffff;
+  }
+
+  .Desktoplogo {
+    display: block;
+    height: 80px;
+    width: 150px;
+    position: absolute;
+    top: 10px;
+  }
+
+  .desktop_statue_1 {
+    height: 300px;
+    width: 150px;
+
+    bottom: 62px;
+    left: 15%;
+  }
+  .desktop_statue_2 {
+    height: 300px;
+    width: 150px;
+
+    bottom: 62px;
+    right: 15%;
+  }
+  .footer_button {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    bottom: 30px;
+  }
+  .footer_png_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .scarab_page_small_panel {
+    display: flex;
+    width: 50%;
+
+    top: 170px;
+
+    gap: 35px;
+  }
+  .small_panel {
+    height: 70px;
+    width: 150px;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5x px;
+  }
+  .small_panel_heading {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .small_panel_value {
+    font-size: 15px;
+    color: #d27812;
+  }
+  .small_panel_align {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar_left {
+    display: flex;
+    margin-left: 4%;
+    align-items: center;
+  }
+  .navbar_left a {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 11rem;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  .navbar_right {
+    display: flex;
+    align-items: center;
+    margin-right: 4%;
+  }
+  .navbar_right a {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    margin-right: 11rem;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .Desktoplogo {
+    display: block;
+    height: 90px;
+    width: 180px;
+    position: absolute;
+    top: 10px;
+  }
+
+  .desktop_statue_1 {
+    height: 300px;
+    width: 150px;
+
+    bottom: 10%;
+
+    left: 15.5%;
+  }
+  .desktop_statue_2 {
+    height: 300px;
+    width: 140px;
+
+    bottom: 73px;
+    right: 16.5%;
+  }
+
+  .footer_button {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    bottom: 30px;
+  }
+  .footer_png_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .scarab_page_small_panel {
+    display: flex;
+    width: 50%;
+
+    top: 170px;
+
+    gap: 35px;
+  }
+  .small_panel {
+    height: 70px;
+    width: 190px;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5x px;
+  }
+  .small_panel_heading {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .small_panel_value {
+    font-size: 15px;
+    color: #d27812;
+  }
+  .small_panel_align {
+    display: flex;
+    justify-content: space-between;
+  }
 }

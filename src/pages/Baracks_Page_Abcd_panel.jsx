@@ -1,14 +1,17 @@
 import Image from "next/image";
+import style from "../styles/baracks_page_Abcd_panel.module.css";
 import menu from "../../public/mobile/menu_th_icon 1.png";
 import logo from "../../public/mobile/logo.png";
+import { AiOutlineInfoCircle } from "react-icons/ai";
+
 import twitter from "../../public/Assests_1st Frame/twitter 1.png";
 import telegram from "../../public/Assests_1st Frame/telegram 1.png";
 import discord from "../../public/Assests_1st Frame/Discord 1.png";
 import book from "../../public/Assests_1st Frame/book 1.png";
-import style from "../styles/scarab_Proposal_detail.module.css";
 import back_arrow from "../../public/mobile/back icon_desktop.png";
 import desktop_logo from "../../public/Assests_1st Frame/Logo 1.png";
-const scarab_proposal_detail_Page = () => {
+
+const Baracks_Page_Abcd_panel = () => {
   return (
     <>
       <div className={style.bg_Scarab_page}>
@@ -18,6 +21,7 @@ const scarab_proposal_detail_Page = () => {
           src={menu}
           alt='menu'
         />
+
         {/* Desktop_code_Start_here */}
         <div className={style.Navbar}>
           <div className={style.navbar_left}>
@@ -57,41 +61,39 @@ const scarab_proposal_detail_Page = () => {
           <Image src={logo} className={style.header_logo} alt='logo'></Image>
           <button className={style.header_button}>Connect</button>
         </div>
-
         <div className={style.stack_page_middle_panel}>
           <div className={style.stack_page_panel}>
             <div className={style.stack_page_panel_data}>
-              <p className={style.stack_page_panel_heading}>Proposal</p>
-              <div className={style.Align_detailPage_detail}>
-                <div className={style.detailpage_gap}>
-                  <div>
-                    <p className={style.details_page_underLine}>Proposal: 0</p>
-                  </div>
-                  <div>
-                    <p className={style.details_page_underLine}>
-                      Guardian Information
+              <p className={style.stack_page_panel_heading}>ABCDmander Check</p>
+              <div className={style.panel_data_width}>
+                <div className={style.proposal_panel_data_input_align}>
+                  <div className={style.stack_page_balance_align}>
+                    <p>
+                      Cycle Keyword <AiOutlineInfoCircle /> :Brief
                     </p>
-                    <p>Guardian Name - </p>
-                    <p>Guardian Social Handle - </p>
-                    <p>Guardian Wallet - </p>
                   </div>
-                  <p className={style.details_page_underLine}>
-                    Project Summary
-                  </p>
-                  <div>
-                    <p className={style.details_page_underLine}>Project Docs</p>
-                    <p>Lite/Whitepaper -</p>
-                    <p>Social Docs - </p>
-                    <p>Audits - </p>
+                  <div className={style.align_email_heading}>
+                    <p>Email Address</p>
+                    <input className={style.input_tag} />
                   </div>
-                  <p className={style.details_page_underLine}>
-                    CULT Reward Allocation
-                  </p>
+
+                  <div className={style.stack_page_balance}>
+                    <div className={style.btn}>
+                      <p>Check</p>
+                    </div>
+                  </div>
+                  <div
+                    className={`${style.stack_page_balance_align} ${style.stack_page_mid_panel_footer}`}
+                  >
+                    <p>ABCDmander List</p>
+                    <p>NFT List</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div className={style.footer}>
           <div className={style.footer_png_container}>
             <Image
@@ -110,4 +112,4 @@ const scarab_proposal_detail_Page = () => {
   );
 };
 
-export default scarab_proposal_detail_Page;
+export default Baracks_Page_Abcd_panel;

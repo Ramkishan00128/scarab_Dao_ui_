@@ -6,6 +6,7 @@ import twitter from "../../public/Assests_1st Frame/twitter 1.png";
 import telegram from "../../public/Assests_1st Frame/telegram 1.png";
 import discord from "../../public/Assests_1st Frame/Discord 1.png";
 import book from "../../public/Assests_1st Frame/book 1.png";
+import desktop_logo from "../../public/Assests_1st Frame/Logo 1.png";
 
 const Barack_page = () => {
   return (
@@ -17,6 +18,30 @@ const Barack_page = () => {
           src={menu}
           alt='menu'
         />
+        {/* Desktop_code_Start_here */}
+        <div className={style.Navbar}>
+          <div className={style.navbar_left}>
+            {/* <a href='#'>Lorem Ispum</a> */}
+            <a href='#'>Stack BARACS</a>
+          </div>
+          <div className={style.navbar_right}>
+            <a href='#'>Acts of BARACS</a>
+
+            <div className={style.button_align_right}>
+              <button className={style._header_btn}>
+                <p>Connect wallet</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <Image
+          className={style.Desktoplogo}
+          src={desktop_logo}
+          alt='logo'
+        ></Image>
+        <div className={style.desktop_statue_1}></div>
+        <div className={style.desktop_statue_2}></div>
+        {/* Desktop_code_End_here */}
         <div className={style.burger_menu}>
           <div className={style.menu_item}>
             <p>Stake</p>

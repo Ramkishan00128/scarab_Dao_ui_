@@ -6,6 +6,8 @@ import twitter from "../../public/Assests_1st Frame/twitter 1.png";
 import telegram from "../../public/Assests_1st Frame/telegram 1.png";
 import discord from "../../public/Assests_1st Frame/Discord 1.png";
 import book from "../../public/Assests_1st Frame/book 1.png";
+import back_arrow from "../../public/mobile/back icon_desktop.png";
+import desktop_logo from "../../public/Assests_1st Frame/Logo 1.png";
 
 const submitProposal_page = () => {
   return (
@@ -17,6 +19,41 @@ const submitProposal_page = () => {
           src={menu}
           alt='menu'
         />
+
+        {/* Desktop_code_Start_here */}
+        <div className={style.Navbar}>
+          <div className={style.navbar_left}>
+            <div className={style.button_align_left}>
+              <button className={style._header_btn_back}>
+                <Image
+                  className={style.arrow_png}
+                  src={back_arrow}
+                  alt='back_arrow'
+                ></Image>
+                <p>Back</p>
+              </button>
+            </div>
+
+            <a href='#'>Stack S SCARAB</a>
+          </div>
+          <div className={style.navbar_right}>
+            <a href='#'>Proposal</a>
+
+            <div className={style.button_align_right}>
+              <button className={style._header_btn}>
+                <p>Connect wallet</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <Image
+          className={style.Desktoplogo}
+          src={desktop_logo}
+          alt='logo'
+        ></Image>
+        <div className={style.desktop_statue_1}></div>
+        <div className={style.desktop_statue_2}></div>
+        {/* Desktop_code_End_here */}
         <div className={style.header_icon_button}>
           <Image src={logo} className={style.header_logo} alt='logo'></Image>
           <button className={style.header_button}>Connect</button>

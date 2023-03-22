@@ -1,3 +1,21 @@
+.Navbar {
+  display: none;
+}
+.Desktoplogo {
+  display: none;
+}
+.desktop_HomePage_panel {
+  display: none;
+}
+.desktop_footer {
+  display: none;
+}
+.desktop_footer_mid {
+  display: none;
+}
+.desktop_left_heading {
+  display: none;
+}
 .bg_theme1 {
   height: 100vh;
   width: 100%;
@@ -11,27 +29,79 @@
   justify-content: center;
   font-family: "Skranji";
 }
+.bg_theme2 {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/mobile/bg_red_mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  font-family: "Skranji";
+}
+.bg_theme3 {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/mobile/blue_bg_mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  font-family: "Skranji";
+}
 
 .menu_icon {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 10px;
   width: 30px;
   cursor: pointer;
 }
-
-.beetal_theme {
+.logo {
   position: absolute;
+  height: 50px;
+  width: 120px;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.beetal_theme0 {
+  position: absolute;
+  top: 30%;
 
   width: 95%;
   padding: 0 5px;
-  height: 210px;
-  margin-top: 80px;
+  height: 190px;
+  transform: translateY(-30%);
 }
+.beetal_theme1 {
+  position: absolute;
+  top: 110px;
+
+  width: 50%;
+  padding: 0 5px;
+  height: 190px;
+}
+.beetal_theme2 {
+  position: absolute;
+  top: 90px;
+
+  width: 45%;
+  padding: 0 5px;
+  height: 220px;
+}
+
 .panel_container {
   position: absolute;
 
-  top: 315px;
+  top: 340px;
   background-image: url("/mobile/panel_proposal\ 1.png");
   background-repeat: no-repeat;
   height: 200px;
@@ -145,10 +215,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 90px;
+  margin-bottom: 10px;
 }
 .drawer {
-  /* transition: translateY 0.3s; */
   position: absolute;
   background-color: black;
   height: 250px;
@@ -158,8 +227,6 @@
 
   display: flex;
   flex-direction: column;
-
-  /* transition: 1s; */
 }
 
 .hide {
@@ -192,4 +259,521 @@
   width: 300px;
   /* width: 100%; */
   margin: 10px auto;
+}
+
+@media screen and (min-width: 600px) {
+  .beetal_theme0 {
+    position: absolute;
+    top: 160px;
+
+    width: 80%;
+    padding: 0 5px;
+    height: 240px;
+  }
+  .beetal_theme1 {
+    position: absolute;
+    top: 90px;
+
+    width: 30%;
+    padding: 0 5px;
+    height: 240px;
+  }
+  .beetal_theme2 {
+    position: absolute;
+    top: 80px;
+
+    width: 30%;
+    padding: 0 5px;
+    height: 240px;
+  }
+}
+
+@media screen and (min-width: 852px) {
+  .panel_container {
+    display: none;
+  }
+  .bg_theme1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/mobile/Bg_1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Skranji";
+  }
+  .bg_theme2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/mobile/red_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Skranji";
+  }
+  .bg_theme3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/mobile/blue_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Skranji";
+  }
+  .menu_icon {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .Navbar {
+    position: absolute;
+    top: 15px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar_left {
+    display: flex;
+    margin-right: 5px;
+    align-items: center;
+  }
+  .navbar_left a {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 1rem;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar_left a:hover {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: orange;
+  }
+  .navbar_right {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+  .navbar_right a {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    margin-right: 1rem;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+  }
+  .navbar_right a:hover {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: orange;
+  }
+  ._header_btn {
+    width: 150px;
+
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border-radius: 10px;
+    font-family: "Skranji", cursive;
+    border: 0.4px solid #ffffff;
+    -webkit-text-stroke: #ffffff;
+  }
+
+  .Desktoplogo {
+    display: block;
+    height: 80px;
+    width: 150px;
+    position: absolute;
+    top: 10px;
+  }
+  .beetal_theme0 {
+    position: absolute;
+    top: 290px;
+
+    width: 38%;
+    padding: 0 5px;
+    height: 250px;
+  }
+  .beetal_theme1 {
+    position: absolute;
+    top: 230px;
+
+    width: 30%;
+    padding: 0 5px;
+    height: 250px;
+  }
+  .beetal_theme2 {
+    position: absolute;
+    top: 210px;
+
+    width: 20%;
+    padding: 0 5px;
+    height: 250px;
+  }
+  .arrow {
+    display: none;
+  }
+  .desktop_HomePage_panel {
+    background-image: url("/Assests_1st\ Frame/panel 1.png");
+    display: flex;
+    height: 360px;
+    width: 280px;
+    background-size: 100% 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 150px;
+    right: 5px;
+    padding: 20px;
+    z-index: 100;
+  }
+  .desktop_home_panel_and_button {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .desktop_HomePage_panel p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 75px;
+    width: 100%;
+    font-size: 13px;
+    margin: auto;
+    color: #845704;
+  }
+
+  .desktop_btn {
+    background-image: url("/Assests_1st\ Frame/Button 1.png");
+    display: flex;
+    position: absolute;
+
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 40px;
+    width: 80%;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 200px;
+  }
+  .desktop_statue_1 {
+    background-image: url("/mobile/statue1 12.png");
+    height: 300px;
+    width: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 62px;
+    left: 10%;
+  }
+  .desktop_statue_2 {
+    background-image: url("/mobile/statue2 2.png");
+    height: 300px;
+    width: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 62px;
+    right: 10%;
+  }
+  .footer {
+    /* display: flex;
+    flex-direction: row; */
+    display: none;
+  }
+
+  .desktop_footer {
+    display: block;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    cursor: pointer;
+  }
+  .desktop_footer_mid {
+    position: absolute;
+    bottom: 8px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .desktop_footer_mid p {
+    color: #e7dbc9;
+    font-size: 14px;
+  }
+  .upArrow {
+    height: 20px;
+    width: 40px;
+  }
+  .desktop_left_heading {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+
+    width: 220px;
+
+    font-family: "Skranji", cursive;
+    font-size: 35px;
+
+    color: black;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar_left {
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+  }
+  .navbar_left a {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 1rem;
+  }
+  .navbar_right {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+  .navbar_right a {
+    margin-right: 1rem;
+    font-size: 18px;
+  }
+  ._header_btn {
+    width: 150px;
+
+    height: 40px;
+
+    border-radius: 10px;
+  }
+
+  .beetal_theme0 {
+    position: absolute;
+    top: 290px;
+
+    width: 38%;
+    padding: 0 5px;
+    height: 250px;
+  }
+  .beetal_theme1 {
+    position: absolute;
+    top: 230px;
+
+    width: 30%;
+    padding: 0 5px;
+    height: 250px;
+  }
+  .beetal_theme2 {
+    position: absolute;
+    top: 210px;
+
+    width: 20%;
+    padding: 0 5px;
+    height: 250px;
+  }
+
+  .desktop_HomePage_panel {
+    background-image: url("/Assests_1st\ Frame/panel 1.png");
+
+    top: 150px;
+    right: 5%;
+  }
+
+  .desktop_statue_1 {
+    background-image: url("/mobile/statue1 12.png");
+    height: 300px;
+    width: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 62px;
+    left: 14%;
+  }
+  .desktop_statue_2 {
+    background-image: url("/mobile/statue2 2.png");
+    height: 300px;
+    width: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 62px;
+    right: 14%;
+  }
+  .footer {
+    display: none;
+  }
+
+  .desktop_footer {
+    display: block;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    cursor: pointer;
+  }
+  .desktop_footer_mid {
+    position: absolute;
+    bottom: 8px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .desktop_footer_mid p {
+    color: #e7dbc9;
+    font-size: 14px;
+  }
+  .upArrow {
+    height: 20px;
+    width: 40px;
+  }
+  .desktop_left_heading {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+
+    width: 220px;
+
+    font-family: "Skranji", cursive;
+    font-size: 35px;
+
+    color: black;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 1);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar_left a {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 3rem;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar_right a {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    margin-right: 3rem;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  ._header_btn {
+    width: 150px;
+
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border-radius: 10px;
+    font-family: "Skranji", cursive;
+    border: 0.4px solid #ffffff;
+    -webkit-text-stroke: #ffffff;
+  }
+
+  .Desktoplogo {
+    display: block;
+    height: 95px;
+    width: 180px;
+    position: absolute;
+    top: 8px;
+  }
+  .beetal_theme0 {
+    position: absolute;
+    top: 46%;
+
+    width: 34%;
+    padding: 0 5px;
+    height: 250px;
+    transform: translateY(-30%);
+  }
+  .beetal_theme1 {
+    position: absolute;
+    top: 42%;
+
+    width: 18%;
+    padding: 0 5px;
+    height: 250px;
+    transform: translateY(0%);
+  }
+  .beetal_theme2 {
+    position: absolute;
+    top: 32%;
+    transform: translateY(0%);
+
+    width: 15%;
+    padding: 0 5px;
+    height: 300px;
+  }
+
+  .desktop_HomePage_panel {
+    top: 190px;
+    right: 13%;
+  }
+
+  .desktop_statue_1 {
+    height: 300px;
+    width: 150px;
+
+    bottom: 10%;
+
+    left: 15.5%;
+  }
+  .desktop_statue_2 {
+    height: 300px;
+    width: 140px;
+
+    bottom: 73px;
+    right: 16.5%;
+  }
+
+  .desktop_footer {
+    right: 15px;
+    bottom: 13px;
+  }
+  .desktop_footer_mid {
+    bottom: 15px;
+    width: 90%;
+  }
+  .desktop_footer_mid p {
+    color: #e7dbc9;
+    font-size: 16px;
+  }
+  .upArrow {
+    height: 22px;
+    width: 40px;
+  }
+  .desktop_left_heading {
+    top: 20%;
+    left: 10%;
+
+    width: 280px;
+
+    font-size: 40px;
+  }
 }

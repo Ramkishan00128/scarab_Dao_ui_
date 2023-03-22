@@ -6,6 +6,8 @@ import twitter from "../../public/Assests_1st Frame/twitter 1.png";
 import telegram from "../../public/Assests_1st Frame/telegram 1.png";
 import discord from "../../public/Assests_1st Frame/Discord 1.png";
 import book from "../../public/Assests_1st Frame/book 1.png";
+import desktop_logo from "../../public/Assests_1st Frame/Logo 1.png";
+import back_arrow from "../../public/mobile/back icon_desktop.png";
 const Scarab_stack_page = () => {
   return (
     <>
@@ -83,11 +85,70 @@ const Scarab_stack_page = () => {
               <p className={style.small_panel_value}>6.96266055%</p>
             </div>
             <div className={style.small_panel}>
+              <p className={style.small_panel_heading}>Guardianship Token</p>
+              <p className={style.small_panel_value}>24,750,746,073,238</p>
+            </div>
+          </div>
+        </div>
+        {/* desktop_view_start */}
+        <div className={style.panel_info_left}>
+          <div className={style.align_left_panel_info}>
+            <div>
+              <p className={style.small_panel_heading}>SCARAB Price</p>
+              <p className={style.small_panel_value}>$0.0000000611</p>
+            </div>
+            <div>
               <p className={style.small_panel_heading}>Total SCARAB Staked</p>
               <p className={style.small_panel_value}>2,679,987,280,465</p>
             </div>
           </div>
         </div>
+        <div className={style.panel_info_right}>
+          <div className={style.align_right_panel_info}>
+            <div>
+              <p className={style.small_panel_heading}>APR</p>
+              <p className={style.small_panel_value}>6.96266055%</p>
+            </div>
+            <div>
+              <p className={style.small_panel_heading}>Total SCARAB Staked</p>
+              <p className={style.small_panel_value}>2,679,987,280,465</p>
+            </div>
+          </div>
+        </div>
+        <div className={style.Navbar}>
+          <div className={style.navbar_left}>
+            <div className={style.button_align_left}>
+              <button className={style._header_btn_back}>
+                <Image
+                  className={style.arrow_png}
+                  src={back_arrow}
+                  alt='back_arrow'
+                ></Image>
+                <p>Back</p>
+              </button>
+            </div>
+
+            <a href='#'>Stack S SCARAB</a>
+          </div>
+          <div className={style.navbar_right}>
+            <a href='#'>Proposal</a>
+
+            <div className={style.button_align_right}>
+              <button className={style._header_btn}>
+                <p>Connect wallet</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <Image
+          className={style.Desktoplogo}
+          src={desktop_logo}
+          alt='logo'
+        ></Image>
+        <div className={style.desktop_statue_1}></div>
+        <div className={style.desktop_statue_2}></div>
+        {/* desktop_view_End */}
+
         <div className={style.footer}>
           <div className={style.footer_png_container}>
             <Image

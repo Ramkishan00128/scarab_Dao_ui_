@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState } from "react";
 import style from "../styles/scarab_page.module.css";
 import menu from "../../public/mobile/menu_th_icon 1.png";
 import logo from "../../public/mobile/logo.png";
@@ -6,17 +7,70 @@ import twitter from "../../public/Assests_1st Frame/twitter 1.png";
 import telegram from "../../public/Assests_1st Frame/telegram 1.png";
 import discord from "../../public/Assests_1st Frame/Discord 1.png";
 import book from "../../public/Assests_1st Frame/book 1.png";
+import desktop_logo from "../../public/Assests_1st Frame/Logo 1.png";
+import { motion } from "framer-motion";
 
 const Scarab_page = () => {
+  const [hide, setHide] = useState(true);
+  const handleToggle = () => {};
+
   return (
     <>
       <div className={style.bg_Scarab_page}>
+        {/* <motion.div
+          initial={{ y: "-100%" }}
+          whileInView={{ y: 0 }}
+          exit={{ y: "-100%" }}
+          className={`${style.drawer} ${hide && style.hide}`}
+        >
+          <ul>
+            <li>lorem Ispum</li>
+            <li>lorem Ispum</li>
+            <li>lorem Ispum</li>
+            <li>lorem Ispum</li>
+          </ul>
+          <button className={style.drawer_btn}>Stack and Vote SCARAB</button>
+          <button className={style.drawer_btn}>Stack and Vote BARACS</button>
+        </motion.div> */}
         <Image
           onClick={() => handleToggle(setHide(!hide))}
           className={style.menu_icon}
           src={menu}
           alt='menu'
         />
+
+        {/* Desktop_code_Start_here */}
+        <div className={style.Navbar}>
+          <div className={style.navbar_left}>
+            {/* <div className={style.button_align_left}>
+              <button className={style._header_btn}>
+                <p>stack and Vote</p>
+                <p>SCARAB</p>
+              </button>
+            </div> */}
+
+            {/* <a href='#'>Lorem Ispum</a> */}
+            <a href='#'>Stack S SCARAB</a>
+          </div>
+          <div className={style.navbar_right}>
+            <a href='#'>Proposal</a>
+
+            <div className={style.button_align_right}>
+              <button className={style._header_btn}>
+                <p>Connect wallet</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <Image
+          className={style.Desktoplogo}
+          src={desktop_logo}
+          alt='logo'
+        ></Image>
+        <div className={style.desktop_statue_1}></div>
+        <div className={style.desktop_statue_2}></div>
+        {/* Desktop_code_End_here */}
+
         <div className={style.header_icon_button}>
           <Image src={logo} className={style.header_logo} alt='logo'></Image>
           <button className={style.header_button}>Connect</button>

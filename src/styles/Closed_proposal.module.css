@@ -51,6 +51,7 @@
   border-radius: 8px;
   color: #ffffff;
 }
+
 .stack_page_middle_panel {
   width: 100%;
   display: flex;
@@ -60,7 +61,7 @@
 .stack_page_panel {
   background-image: url("/mobile/stack_page_panel.png");
   position: relative;
-  height: 400px;
+  height: 420px;
   width: 100%;
   background-size: 100% 100%;
   display: flex;
@@ -68,10 +69,12 @@
   align-items: center;
   color: #845704;
 }
-
+.details_page_underLine {
+  text-decoration: underline;
+}
 .stack_page_panel_data {
   position: absolute;
-  top: 50px;
+  top: 85px;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -82,7 +85,7 @@
 }
 .stack_page_panel_heading {
   color: #d27812;
-  font-size: 21px;
+  font-size: 22px;
 }
 .proposal_panel_data_input_align {
   display: flex;
@@ -102,72 +105,56 @@
 
 .stack_page_balance_align {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   font-size: 12px;
-  gap: 5px;
 }
-
-.midpanel_footer_btn {
+.Align_detailPage_detail {
+  position: absolute;
+  top: 30px;
+  left: 3%;
+  font-size: 13px;
+  font-family: "Skranji", cursive;
+  color: #845704;
+  width: 90%;
+}
+.detailpage_gap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.proposal_heading {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.input_tag {
-  border: 1px solid #845704;
-  background-color: #fff9f0;
-  border-radius: 5px;
-  height: 20px;
-  width: 78%;
-}
-
-.btn {
+.progress_bar_container {
   position: relative;
-  background-image: url("/mobile/Button_small\ 1.png");
-  height: 30px;
-  width: 100px;
-  background-size: 100% 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn_gap {
-  background-image: url("/mobile/Button_small\ 1.png");
-  height: 30px;
-
-  width: 105px;
-  background-size: 100% 100%;
-  margin-right: 10px;
-}
-
-.btn p {
-  position: absolute;
-  top: 5px;
-  color: #ffffff;
-  font-size: 12px;
-}
-.btn_gap p {
-  font-size: 11px;
-}
-.stack_page_panel_data_mid {
-  position: absolute;
-  top: 150px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-.input_tag {
-  border: 1px solid #845704;
-  background-color: #fff9f0;
-  border-radius: 5px;
   height: 20px;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #b68936;
 }
-
+.appove_progress_level_1 {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  z-index: 100;
+}
+.appove_progress_level_2 {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+.progress_bar_approve {
+  width: 90%;
+  background-color: #e0b685;
+}
+.progress_bar_reject {
+  width: 10%;
+  background-color: #e0b685;
+}
 .footer {
   position: absolute;
   bottom: 55px;

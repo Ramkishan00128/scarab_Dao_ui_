@@ -1,14 +1,14 @@
 import Image from "next/image";
 import menu from "../../public/mobile/menu_th_icon 1.png";
 import logo from "../../public/mobile/logo.png";
-import style from "../styles/Baracks_stack_page.module.css";
+import style from "../styles/Baracks_stack_page_new.module.css";
 import twitter from "../../public/Assests_1st Frame/twitter 1.png";
 import telegram from "../../public/Assests_1st Frame/telegram 1.png";
 import discord from "../../public/Assests_1st Frame/Discord 1.png";
 import book from "../../public/Assests_1st Frame/book 1.png";
-import back_arrow from "../../public/mobile/back icon_desktop.png";
 import desktop_logo from "../../public/Assests_1st Frame/Logo 1.png";
-const Baracks_stack_page = () => {
+import back_arrow from "../../public/mobile/back icon_desktop.png";
+const Scarab_stack_page = () => {
   return (
     <>
       <div className={style.bg_Scarab_page}>
@@ -18,69 +18,6 @@ const Baracks_stack_page = () => {
           src={menu}
           alt='menu'
         />
-        {/* desktop_view_start */}
-        <div className={style.panel_info_left}>
-          <div className={style.align_left_panel_info}>
-            <div>
-              <p className={style.small_panel_heading}>SCARAB Price</p>
-              <p className={style.small_panel_value}>$0.0000000611</p>
-            </div>
-            <div>
-              <p className={style.small_panel_heading}>Total SCARAB Staked</p>
-              <p className={style.small_panel_value}>2,679,987,280,465</p>
-            </div>
-            <div>
-              <p className={style.small_panel_heading}>Total SCARAB Staked</p>
-              <p className={style.small_panel_value}>2,679,987,280,465</p>
-            </div>
-          </div>
-        </div>
-        <div className={style.panel_info_right}>
-          <div className={style.align_right_panel_info}>
-            <div>
-              <p className={style.small_panel_heading}>APR</p>
-              <p className={style.small_panel_value}>6.96266055%</p>
-            </div>
-            <div>
-              <p className={style.small_panel_heading}>Total SCARAB Staked</p>
-              <p className={style.small_panel_value}>2,679,987,280,465</p>
-            </div>
-          </div>
-        </div>
-        <div className={style.Navbar}>
-          <div className={style.navbar_left}>
-            <div className={style.button_align_left}>
-              <button className={style._header_btn_back}>
-                <Image
-                  className={style.arrow_png}
-                  src={back_arrow}
-                  alt='back_arrow'
-                ></Image>
-                <p>Back</p>
-              </button>
-            </div>
-
-            <a href='#'>Stack S SCARAB</a>
-          </div>
-          <div className={style.navbar_right}>
-            <a href='#'>Proposal</a>
-
-            <div className={style.button_align_right}>
-              <button className={style._header_btn}>
-                <p>Connect wallet</p>
-              </button>
-            </div>
-          </div>
-        </div>
-        <Image
-          className={style.Desktoplogo}
-          src={desktop_logo}
-          alt='logo'
-        ></Image>
-        <div className={style.desktop_statue_1}></div>
-        <div className={style.desktop_statue_2}></div>
-        {/* desktop_view_End */}
-
         <div className={style.header_icon_button}>
           <Image src={logo} className={style.header_logo} alt='logo'></Image>
           <button className={style.header_button}>Connect</button>
@@ -92,9 +29,8 @@ const Baracks_stack_page = () => {
               <p className={style.small_panel_value}>$0.0000000611</p>
             </div>
             <div className={style.small_panel}>
-              <p className={style.small_panel_heading_right}>
-                Check ABCD Mander
-              </p>
+              <p className={style.small_panel_heading}>Guardianship Token</p>
+              <p className={style.small_panel_value}>24,750,746,073,238</p>
             </div>
           </div>
           <div className={style.stack_page_middle_panel}>
@@ -152,11 +88,75 @@ const Baracks_stack_page = () => {
               <p className={style.small_panel_value}>6.96266055%</p>
             </div>
             <div className={style.small_panel}>
-              <p className={style.small_panel_heading}>Opt-In as </p>
-              <p className={style.small_panel_value_ABCD}>ABCD mander</p>
+              <p className={style.small_panel_heading}>Guardianship Token</p>
+              <p className={style.small_panel_value}>24,750,746,073,238</p>
             </div>
           </div>
         </div>
+        {/* desktop_view_start */}
+        <div className={style.panel_info_left}>
+          <div className={style.align_left_panel_info}>
+            <div>
+              <p className={style.small_panel_heading}>BARACS Price</p>
+              <p className={style.small_panel_value}>$0.0000000611</p>
+            </div>
+            <div>
+              <p className={style.small_panel_heading}>APR</p>
+              <p className={style.small_panel_value}>8.7%</p>
+            </div>
+            <div>
+              <p className={style.small_panel_heading}>Total BARACS Staked</p>
+              <p className={style.small_panel_value}>24,750,746,073,238</p>
+            </div>
+          </div>
+        </div>
+        <div className={style.panel_info_right}>
+          <div className={style.align_right_panel_info1}>
+            <p>
+              Check <span className={style.abcd_mander}>ABCD mander</span>
+            </p>
+          </div>
+
+          <div className={style.align_right_panel_info2}>
+            <p>
+              Check <span className={style.abcd_mander}>ABCD mander</span>
+            </p>
+          </div>
+        </div>
+        <div className={style.Navbar}>
+          <div className={style.navbar_left}>
+            <div className={style.button_align_left}>
+              <button className={style._header_btn_back}>
+                <Image
+                  className={style.arrow_png}
+                  src={back_arrow}
+                  alt='back_arrow'
+                ></Image>
+                <p>Back</p>
+              </button>
+            </div>
+
+            <a href='#'>Stack S SCARAB</a>
+          </div>
+          <div className={style.navbar_right}>
+            <a href='#'>Proposal</a>
+
+            <div className={style.button_align_right}>
+              <button className={style._header_btn}>
+                <p>Connect wallet</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <Image
+          className={style.Desktoplogo}
+          src={desktop_logo}
+          alt='logo'
+        ></Image>
+        <div className={style.desktop_statue_1}></div>
+        <div className={style.desktop_statue_2}></div>
+        {/* desktop_view_End */}
+
         <div className={style.footer}>
           <div className={style.footer_png_container}>
             <Image
@@ -175,4 +175,4 @@ const Baracks_stack_page = () => {
   );
 };
 
-export default Baracks_stack_page;
+export default Scarab_stack_page;

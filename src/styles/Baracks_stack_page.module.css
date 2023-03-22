@@ -1,7 +1,7 @@
 .bg_Scarab_page {
   height: 100vh;
   width: 100%;
-  background-image: url("/mobile/bg_wallet.png");
+  background-image: url("/mobile/Bg_proposal.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
@@ -49,7 +49,7 @@
   width: 90%;
   flex-direction: column;
   position: absolute;
-  top: 85px;
+  top: 150px;
 
   gap: 5px;
 }
@@ -68,6 +68,10 @@
   font-size: 12px;
   margin-top: 12px;
 }
+.small_panel_heading_right {
+  margin-top: 18px;
+  font-size: 12px;
+}
 .small_panel_value {
   font-size: 15px;
   color: #d27812;
@@ -82,17 +86,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #845704;
 }
 .stack_page_panel {
   background-image: url("/mobile/stack_page_panel.png");
   position: relative;
-  height: 350px;
+  height: 400px;
   width: 100%;
   background-size: 100% 100%;
 }
 .stack_page_panel_data {
   position: absolute;
-  top: 33px;
+  top: 50px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -100,9 +105,13 @@
   align-items: center;
   gap: 5px;
 }
+
 .stack_page_panel_heading {
   color: #d27812;
   font-size: 19px;
+}
+.small_panel_value_ABCD {
+  font-size: 12px;
 }
 .stack_page_balance {
   display: flex;
@@ -128,7 +137,7 @@
 }
 .btn {
   position: relative;
-  background-image: url("/mobile/Button_small\ 1.png");
+  background-image: url("/Button 1.png");
   height: 30px;
   width: 100px;
   background-size: 100% 100%;
@@ -144,7 +153,7 @@
 }
 .stack_page_panel_data_mid {
   position: absolute;
-  top: 150px;
+  top: 170px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -189,13 +198,18 @@
 
 .stack_page_panel_data_footer {
   position: absolute;
-  top: 250px;
+  top: 270px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+.mid_panel_last_para {
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .footer {
@@ -236,4 +250,380 @@
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 852px) {
+  .header_icon_button {
+    display: none;
+  }
+  .bg_Scarab_page {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/mobile/Stack_page_desktop_view.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Skranji";
+    z-index: -100;
+  }
+  .menu_icon {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .Navbar {
+    position: absolute;
+    top: 15px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar_left {
+    display: flex;
+    margin-left: 2%;
+    align-items: center;
+  }
+  .navbar_left a {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 4rem;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar_right {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+  .navbar_right a {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    margin-right: 5rem;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .navbar_right a:hover {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+
+    -webkit-text-fill-color: #ff9c2d;
+  }
+  ._header_btn {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border-radius: 10px;
+    font-family: "Skranji", cursive;
+    border: 0.4px solid #ffffff;
+    -webkit-text-stroke: #ffffff;
+  }
+  ._header_btn_back {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    border-radius: 10px;
+    font-family: "Skranji", cursive;
+    border: 0.4px solid #ffffff;
+    -webkit-text-stroke: #ffffff;
+  }
+  ._header_btn_back p {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  .Desktoplogo {
+    display: block;
+    height: 80px;
+    width: 150px;
+    position: absolute;
+    top: 10px;
+  }
+
+  .desktop_statue_1 {
+    background-image: url("/mobile/statue1 12.png");
+    height: 300px;
+    width: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 62px;
+    left: 10%;
+  }
+  .desktop_statue_2 {
+    background-image: url("/mobile/statue2 2.png");
+    height: 300px;
+    width: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 62px;
+    right: 10%;
+  }
+  .bg_Scarab_page {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/mobile/bg_yellow_stack_page.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    font-family: "Skranji";
+    z-index: -100;
+  }
+  .stack_page_middle_panel {
+    width: 50%;
+    margin: auto;
+  }
+  .stack_page_panel {
+    background-image: url("/mobile/panel_Stake 3_desktop.png");
+    position: relative;
+    margin-top: -15%;
+    transform: translateY(5%);
+    height: 380px;
+    width: 60%;
+    background-size: 100% 100%;
+  }
+  .stack_page_panel_data {
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .stack_page_panel_data_mid {
+    position: absolute;
+    top: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .stack_page_panel_data_footer {
+    position: absolute;
+    top: 270px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .panel_info_left {
+    background-image: url("/mobile/panel_info_desktop.png");
+    position: absolute;
+    left: 6%;
+    top: 20%;
+    height: 140px;
+    width: 220px;
+    background-size: 100% 100%;
+    display: flex;
+    transform: translateY(0%);
+
+    flex-direction: column;
+    gap: 10px;
+  }
+  .align_left_panel_info {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .panel_info_right {
+    background-image: url("/mobile/panel_info_desktop.png");
+    position: absolute;
+    top: 20%;
+    right: 6%;
+    height: 140px;
+    width: 220px;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(0%);
+  }
+  .align_right_panel_info {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .small_panel {
+    display: none;
+  }
+  .footer_button {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    bottom: 30px;
+  }
+  .footer_png_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop_statue_1 {
+    background-image: url("/mobile/statue1 12.png");
+    height: 300px;
+    width: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 62px;
+    left: 14%;
+  }
+  .desktop_statue_2 {
+    background-image: url("/mobile/statue2 2.png");
+    height: 300px;
+    width: 150px;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 62px;
+    right: 14%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar_left {
+    display: flex;
+    margin-left: 4%;
+    align-items: center;
+  }
+  .navbar_left a {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 11rem;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  .navbar_right {
+    display: flex;
+    align-items: center;
+    margin-right: 4%;
+  }
+  .navbar_right a {
+    -webkit-text-stroke: 1.5px rgb(43, 9, 9);
+    -webkit-text-fill-color: white;
+    font-weight: bold;
+    margin-right: 11rem;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .stack_page_middle_panel {
+    width: 45%;
+
+    margin: auto;
+  }
+  .stack_page_panel {
+    background-image: url("/mobile/panel_Stake 3_desktop.png");
+    position: relative;
+    margin-top: 40%;
+    transform: translateY(-20%);
+    height: 400px;
+    width: 100%;
+    background-size: 100% 100%;
+  }
+
+  .panel_info_left {
+    background-image: url("/mobile/panel_info_desktop.png");
+    position: absolute;
+    left: 13%;
+    top: 20%;
+    height: 140px;
+    width: 220px;
+    background-size: 100% 100%;
+    display: flex;
+    transform: translateY(0%);
+
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .panel_info_right {
+    background-image: url("/mobile/panel_info_desktop.png");
+    position: absolute;
+    top: 20%;
+    right: 13%;
+    height: 140px;
+    width: 220px;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(0%);
+  }
+  .align_right_panel_info {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .small_panel {
+    display: none;
+  }
+  .Desktoplogo {
+    display: block;
+    height: 95px;
+    width: 180px;
+    position: absolute;
+    top: 8px;
+  }
+  .desktop_statue_1 {
+    height: 300px;
+    width: 150px;
+
+    bottom: 10%;
+
+    left: 15.5%;
+  }
+  .desktop_statue_2 {
+    height: 300px;
+    width: 140px;
+
+    bottom: 73px;
+    right: 16.5%;
+  }
+  .footer_button {
+    display: none;
+  }
+  .footer {
+    display: flex;
+    bottom: 30px;
+  }
+  .footer_png_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
 }
