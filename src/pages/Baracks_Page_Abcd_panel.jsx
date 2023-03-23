@@ -12,6 +12,7 @@ import back_arrow from "../../public/mobile/back icon_desktop.png";
 import desktop_logo from "../../public/Assests_1st Frame/Logo 1.png";
 
 const Baracks_Page_Abcd_panel = () => {
+  // h
   return (
     <>
       <div className={style.bg_Scarab_page}>
