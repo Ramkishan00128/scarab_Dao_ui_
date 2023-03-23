@@ -387,7 +387,7 @@
     display: none;
   }
 
-  .greenbg {
+  /* .greenbg {
     background-image: url("/mobile/green_BG 1_carosel.png");
     position: absolute;
     top: 10%;
@@ -413,11 +413,11 @@
     width: 400px;
     background-size: 100% 100%;
     z-index: -1;
-  }
+  } */
   .bg_theme1 {
     height: 100vh;
     width: 100%;
-    background-image: url("/mobile/_bg_for_carosel.png");
+    background-image: url("/mobile/Bg_1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -665,7 +665,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .greenbg {
+  /* .greenbg {
     background-image: url("/mobile/green_BG 1_carosel.png");
     position: absolute;
     top: 10%;
@@ -691,7 +691,7 @@
     width: 400px;
     background-size: 100% 100%;
     z-index: -1;
-  }
+  } */
   .navbar_left {
     display: flex;
     margin-right: 10px;
@@ -815,7 +815,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .greenbg {
+  /* .greenbg {
     position: absolute;
     top: 10%;
     height: 700px;
@@ -839,7 +839,7 @@
     width: 800px;
     background-size: 100% 100%;
     transform: translateY(0%);
-  }
+  } */
 
   .navbar_left a {
     font-weight: bold;
