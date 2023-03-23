@@ -74,7 +74,7 @@
 
 .beetal_theme0 {
   position: absolute;
-  top: 25%;
+  top: 30%;
 
   width: 95%;
   padding: 0 5px;
@@ -101,7 +101,7 @@
 .panel_container {
   position: absolute;
 
-  top: 355px;
+  top: 500px;
   background-image: url("/mobile/panel_proposal 1.png");
   background-repeat: no-repeat;
   height: 190px;
@@ -168,7 +168,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 .footer p {
   color: #e7dbc9;
