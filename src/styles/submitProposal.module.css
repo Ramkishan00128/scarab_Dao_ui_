@@ -61,7 +61,7 @@
 .stack_page_panel {
   background-image: url("/mobile/stack_page_panel.png");
   position: relative;
-  height: 380px;
+  height: 340px;
   /* width: 100%; */
   min-width: 300px;
   background-size: 100% 100%;

@@ -54,7 +54,7 @@
 .pending_panel {
   position: absolute;
 
-  top: 110px;
+  top: 120px;
   background-image: url("/mobile/pending_panel 2.png");
   background-repeat: no-repeat;
   height: 400px;
