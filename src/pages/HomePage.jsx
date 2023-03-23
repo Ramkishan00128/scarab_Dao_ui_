@@ -10,7 +10,7 @@ import discord from "../../public/Assests_1st Frame/Discord 1.png";
 import book from "../../public/Assests_1st Frame/book 1.png";
 import leftArrow from "../../public/mobile/arrow 2.png";
 import rightArrow from "../../public/mobile/arrow 3.png";
-import logo from "../../public/mobile/logo.png";
+
 import desktop_logo from "../../public/Assests_1st Frame/Logo 1.png";
 import upArrow from "../../public/Assests_1st Frame/arrow 1.png";
 import { useEffect, useState } from "react";
