@@ -19,14 +19,15 @@ import { motion } from "framer-motion";
 const Home_header = () => {
   const [hide, setHide] = useState(true);
   const [theme, setTheme] = useState(0);
-
-  // setInterval(() => {
-  //   if (theme == 0 || theme == 1) {
-  //     setTheme(theme + 1);
-  //   } else {
-  //     setTheme(0);
-  //   }
-  // }, 5000);
+  useEffect(() => {
+    setInterval(() => {
+      if (theme == 0 || theme == 1) {
+        setTheme(theme + 1);
+      } else {
+        setTheme(0);
+      }
+    }, 5000);
+  }, [theme]);
 
   const handleToggle = () => {};
   const themedata = [beetal, horus_eye_1, pharaoh];

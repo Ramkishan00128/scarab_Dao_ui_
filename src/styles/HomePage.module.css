@@ -334,7 +334,7 @@
     position: absolute;
 
     top: 310px;
-    background-image: url("/mobile/panel_proposal\ 1.png");
+    background-image: url("/mobile/panel_proposal 1.png");
     background-repeat: no-repeat;
     height: 200px;
     width: 55%;
@@ -361,6 +361,14 @@
 
     margin: auto;
     color: #845704;
+  }
+  .btn_png p {
+    color: #ffffff;
+    position: absolute;
+    top: 8px;
+
+    width: 100%;
+    text-align: center;
   }
   .footer {
     position: absolute;
@@ -517,7 +525,7 @@
     display: none;
   }
   .desktop_HomePage_panel {
-    background-image: url("/Assests_1st\ Frame/panel 1.png");
+    background-image: url("/Assests_1st Frame/panel 1.png");
     display: flex;
     height: 360px;
     width: 280px;
@@ -549,7 +557,7 @@
   }
 
   .desktop_btn {
-    background-image: url("/Assests_1st\ Frame/Button 1.png");
+    background-image: url("/Assests_1st Frame/Button 1.png");
     display: flex;
     position: absolute;
 
@@ -682,7 +690,7 @@
   }
 
   .desktop_HomePage_panel {
-    background-image: url("/Assests_1st\ Frame/panel 1.png");
+    background-image: url("/Assests_1st Frame/panel 1.png");
 
     top: 150px;
     right: 5%;

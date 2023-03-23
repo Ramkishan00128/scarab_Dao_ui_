@@ -26,7 +26,6 @@
   display: flex;
   justify-content: center;
   font-family: "Skranji";
-  z-index: -100;
 }
 .menu_icon {
   position: absolute;
@@ -145,7 +144,7 @@
 }
 .btn {
   position: relative;
-  background-image: url("/mobile/Button_small\ 1.png");
+  background-image: url("/mobile/Button_small 1.png");
   height: 30px;
   width: 100px;
   background-size: 100% 100%;

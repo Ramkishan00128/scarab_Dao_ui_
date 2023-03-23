@@ -125,7 +125,7 @@
 
 .btn {
   position: relative;
-  background-image: url("/mobile/Button_small\ 1.png");
+  background-image: url("/mobile/Button_small 1.png");
   height: 30px;
   width: 100px;
   background-size: 100% 100%;
@@ -134,7 +134,7 @@
   justify-content: center;
 }
 .btn_gap {
-  background-image: url("/mobile/Button_small\ 1.png");
+  background-image: url("/mobile/Button_small 1.png");
   height: 30px;
 
   width: 105px;
@@ -410,7 +410,7 @@
     justify-content: space-between;
   }
   .btn_gap {
-    background-image: url("/mobile/Button_small\ 1.png");
+    background-image: url("/mobile/Button_small 1.png");
     height: 30px;
 
     width: 125px;
