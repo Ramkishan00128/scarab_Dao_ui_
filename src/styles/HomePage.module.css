@@ -386,10 +386,38 @@
   .panel_container {
     display: none;
   }
-  .bg_theme1 {
+
+  .greenbg {
+    background-image: url("/mobile/green_BG 1_carosel.png");
+    position: absolute;
+    top: 10%;
+    height: 450px;
+    width: 400px;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+  .redBg {
+    background-image: url("/mobile/red__bg_carosel.png");
+    position: absolute;
+    top: 10%;
+    height: 450px;
+    width: 400px;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+  .blue_bg {
+    background-image: url("/mobile/blue_bg_carosel.png");
+    position: absolute;
+    top: 10%;
+    height: 450px;
+    width: 400px;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+  /* .bg_theme1 {
     height: 100vh;
     width: 100%;
-    background-image: url("/mobile/Bg_1.png");
+    background-image: url("/mobile/_bg_for_carosel.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -424,7 +452,7 @@
     display: flex;
     justify-content: center;
     font-family: "Skranji";
-  }
+  } */
   .menu_icon {
     display: none;
   }
@@ -637,6 +665,33 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .greenbg {
+    background-image: url("/mobile/green_BG 1_carosel.png");
+    position: absolute;
+    top: 10%;
+    height: 450px;
+    width: 400px;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+  .redBg {
+    background-image: url("/mobile/red__bg_carosel.png");
+    position: absolute;
+    top: 10%;
+    height: 450px;
+    width: 400px;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
+  .blue_bg {
+    background-image: url("/mobile/blue_bg_carosel.png");
+    position: absolute;
+    top: 10%;
+    height: 450px;
+    width: 400px;
+    background-size: 100% 100%;
+    z-index: -1;
+  }
   .navbar_left {
     display: flex;
     margin-right: 10px;
@@ -760,6 +815,32 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .greenbg {
+    position: absolute;
+    top: 10%;
+    height: 700px;
+    width: 800px;
+    background-size: 100% 100%;
+    transform: translateY(0%);
+    background-size: 100% 100%;
+  }
+  .redBg {
+    position: absolute;
+    top: 10%;
+    height: 700px;
+    width: 800px;
+    background-size: 100% 100%;
+    transform: translateY(0%);
+  }
+  .blue_bg {
+    position: absolute;
+    top: 10%;
+    height: 700px;
+    width: 800px;
+    background-size: 100% 100%;
+    transform: translateY(0%);
+  }
+
   .navbar_left a {
     font-weight: bold;
     font-size: 20px;

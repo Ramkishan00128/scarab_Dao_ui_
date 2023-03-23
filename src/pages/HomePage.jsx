@@ -19,15 +19,15 @@ import { motion } from "framer-motion";
 const Home_header = () => {
   const [hide, setHide] = useState(true);
   const [theme, setTheme] = useState(0);
-  useEffect(() => {
-    setInterval(() => {
-      if (theme == 0 || theme == 1) {
-        setTheme(theme + 1);
-      } else {
-        setTheme(0);
-      }
-    }, 5000);
-  }, [theme]);
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     if (theme == 0 || theme == 1) {
+  //       setTheme(theme + 1);
+  //     } else {
+  //       setTheme(0);
+  //     }
+  //   }, 5000);
+  // }, [theme]);
 
   const handleToggle = () => {};
   const themedata = [beetal, horus_eye_1, pharaoh];
@@ -83,10 +83,16 @@ const Home_header = () => {
           src={menu}
           alt='menu'
         />
+        <div
+          className={`${theme == 0 && style.greenbg} ${
+            theme == 1 && style.redBg
+          } ${theme == 2 && style.blue_bg}`}
+          alt='greenbg'
+        ></div>
         <Image
-          className={`${theme == 0 ? style.beetal_theme0 : ""} ${
-            theme == 1 ? style.beetal_theme1 : ""
-          } ${theme == 2 ? style.beetal_theme2 : ""}`}
+          className={`${theme == 0 && style.beetal_theme0} ${
+            theme == 1 && style.beetal_theme1
+          } ${theme == 2 && style.beetal_theme2}`}
           src={themedata[theme]}
           alt='beetal'
         />
