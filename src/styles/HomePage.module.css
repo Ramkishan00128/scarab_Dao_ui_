@@ -74,7 +74,7 @@
 
 .beetal_theme0 {
   position: absolute;
-  top: 25%;
+  top: 26%;
 
   width: 95%;
   padding: 0 5px;
@@ -83,7 +83,7 @@
 }
 .beetal_theme1 {
   position: absolute;
-  top: 110px;
+  top: 170px;
 
   width: 50%;
   padding: 0 5px;
@@ -91,7 +91,7 @@
 }
 .beetal_theme2 {
   position: absolute;
-  top: 90px;
+  top: 150px;
 
   width: 45%;
   padding: 0 5px;
@@ -101,7 +101,7 @@
 .panel_container {
   position: absolute;
 
-  top: 355px;
+  top: 450px;
   background-image: url("/mobile/panel_proposal 1.png");
   background-repeat: no-repeat;
   height: 190px;
@@ -168,7 +168,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 .footer p {
   color: #e7dbc9;
@@ -215,7 +215,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
 }
 .drawer {
   position: absolute;

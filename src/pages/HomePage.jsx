@@ -62,9 +62,9 @@ const Home_header = () => {
         } ${theme == 2 && style.bg_theme3}`}
       >
         <motion.div
-          initial={{ y: "-100%" }}
-          whileInView={{ y: 0 }}
-          exit={{ y: "-100%" }}
+          initial={{ x: "-100%" }}
+          whileInView={{ x: 0 }}
+          exit={{ x: "-100%" }}
           className={`${style.drawer} ${hide && style.hide}`}
         >
           <ul className={style.nav_list}>
